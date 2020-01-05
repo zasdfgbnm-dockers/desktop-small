@@ -20,6 +20,8 @@ filezilla
 wireshark-qt
 
 # office
+lyx
+texlive-langchinese
 inkscape
 gimp
 simplescreenrecorder
