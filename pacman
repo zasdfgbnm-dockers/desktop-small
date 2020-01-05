@@ -23,10 +23,10 @@ wireshark-qt
 inkscape
 gimp
 simplescreenrecorder
-libreoffice-fresh
 chrome-remote-desktop
 kgraphviewer
 pdfarranger
+kbibtex
 
 # cloud disk
 megasync
@@ -36,8 +36,6 @@ baidupcs-go-bin
 vlc
 youtube-dl
 mencoder
-supertux
-supertuxkart
 plex-media-server
 
 # development
