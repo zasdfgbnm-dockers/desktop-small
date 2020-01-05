@@ -1,0 +1,1 @@
+[![Actions Status](https://github.com/zasdfgbnm-dockers/desktop-small/workflows/docker-image/badge.svg)](https://github.com/zasdfgbnm-dockers/desktop-small/actions)
