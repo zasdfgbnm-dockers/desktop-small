@@ -9,10 +9,6 @@ ntfs-3g
 nvidia
 
 # web & network
-networkmanager
-networkmanager-openconnect
-networkmanager-pptp
-networkmanager-strongswan
 chromium
 firefox
 ktorrent

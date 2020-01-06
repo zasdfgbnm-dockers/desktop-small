@@ -15,7 +15,7 @@ RUN for i in $(grep '^\w.*' /yaourt); do yaourt -S --noconfirm $i || true; done
 RUN /install_netdata_nv_plugin.sh
 
 # system settings
-RUN systemctl enable libvirtd sddm NetworkManager
+RUN systemctl enable libvirtd sddm
 RUN sed -i 's/basic/desktop/g' /etc/docker-btrfs.json
 RUN echo 'fs.inotify.max_user_watches=524288' > /etc/sysctl.d/inotify.conf
 
