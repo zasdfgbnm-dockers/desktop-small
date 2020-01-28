@@ -2,6 +2,7 @@ FROM zasdfgbnmsystem/basic
 
 USER root
 COPY yaourt pacman install_netdata_nv_plugin.sh /
+COPY sddm.conf /etc/sddm.conf.d/theme.conf
 
 # do a full upgrade first
 RUN pacman -Sy --noconfirm archlinuxcn-keyring archlinux-keyring
