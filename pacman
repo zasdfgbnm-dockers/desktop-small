@@ -1,12 +1,11 @@
 # system
 partitionmanager
 gparted
-intel-ucode
+amd-ucode
 fwupd
 android-tools
 exfat-utils
 ntfs-3g
-nvidia
 
 # web & network
 chromium
@@ -33,7 +32,6 @@ baidupcs-go-bin
 vlc
 youtube-dl
 mencoder
-plex-media-server
 
 # development
 yakuake
@@ -52,9 +50,6 @@ virtualbox-guest-iso
 virtualbox-host-modules-arch
 virtualbox-guest-modules-arch
 virtualbox-ext-vnc
-
-# drivers
-broadcom-wl-dkms
 
 # Desktop environment & basic tools
 plasma-meta
