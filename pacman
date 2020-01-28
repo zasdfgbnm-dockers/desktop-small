@@ -1,6 +1,7 @@
 # system
 partitionmanager
 gparted
+intel-ucode
 amd-ucode
 fwupd
 android-tools
