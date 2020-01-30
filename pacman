@@ -54,6 +54,7 @@ virtualbox-ext-vnc
 
 # Desktop environment & basic tools
 plasma-meta
+plasma-wayland-session
 kde-applications-meta
 xorg
 xorg-drivers
