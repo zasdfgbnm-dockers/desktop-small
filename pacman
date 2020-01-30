@@ -7,6 +7,7 @@ fwupd
 android-tools
 exfat-utils
 ntfs-3g
+alacritty
 
 # web & network
 chromium
