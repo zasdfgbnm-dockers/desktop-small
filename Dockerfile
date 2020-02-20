@@ -10,7 +10,7 @@ RUN sudo -u user yaourt -Syua --noconfirm || true
 
 # install all packages
 RUN pacman -S --noconfirm $(grep '^\w.*' /pacman)
-RUN for i in $(grep '^\w.*' /yaourt); do yaourt -S --noconfirm $i || true; done
+RUN for i in $(grep '^\w.*' /yaourt); do sudo -u user yaourt -S --noconfirm $i || true; done
 
 # install netdata_nv_plugin
 RUN /install_netdata_nv_plugin.sh
