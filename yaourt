@@ -9,6 +9,7 @@ slack-desktop
 pdftk-bin
 nvidia-container-toolkit
 slack-desktop
+foldingathome-noroot
 
 # artwork
 archlinux-artwork
