@@ -41,6 +41,7 @@ visual-studio-code-bin
 meld
 sqlitebrowser
 opencv
+magma
 
 # virtualization
 ovmf
