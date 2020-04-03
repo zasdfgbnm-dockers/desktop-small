@@ -8,6 +8,7 @@ android-tools
 exfat-utils
 ntfs-3g
 alacritty
+cups
 
 # web & network
 chromium
