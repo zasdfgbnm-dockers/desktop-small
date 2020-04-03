@@ -9,6 +9,7 @@ exfat-utils
 ntfs-3g
 alacritty
 cups
+system-config-printer
 
 # web & network
 chromium
