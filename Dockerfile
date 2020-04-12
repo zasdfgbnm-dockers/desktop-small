@@ -3,14 +3,13 @@ FROM zasdfgbnmsystem/basic
 USER root
 COPY install_netdata_nv_plugin.sh /
 COPY sddm.conf /etc/sddm.conf.d/theme.conf
-COPY PKGBUILD /zasdfgbnmsystem-desktop-small/PKGBUILD
 
 # do a full upgrade first
 RUN pacman -Sy --noconfirm archlinuxcn-keyring archlinux-keyring
 RUN sudo -u user yaourt -Syua --noconfirm || true
 
 # install all packages
-RUN sudo -u user yaourt -P -i --noconfirm /zasdfgbnmsystem-desktop-small
+RUN sudo -u user yaourt -Sy --noconfirm zasdfgbnmsystem-desktop-small
 
 # install netdata_nv_plugin
 RUN /install_netdata_nv_plugin.sh
