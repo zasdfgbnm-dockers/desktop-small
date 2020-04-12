@@ -1,16 +1,16 @@
 FROM zasdfgbnmsystem/basic
 
 USER root
-COPY yaourt pacman install_netdata_nv_plugin.sh /
+COPY install_netdata_nv_plugin.sh /
 COPY sddm.conf /etc/sddm.conf.d/theme.conf
+COPY PKGBUILD /zasdfgbnmsystem-desktop-small/PKGBUILD
 
 # do a full upgrade first
 RUN pacman -Sy --noconfirm archlinuxcn-keyring archlinux-keyring
 RUN sudo -u user yaourt -Syua --noconfirm || true
 
 # install all packages
-RUN pacman -S --noconfirm $(grep '^\w.*' /pacman)
-RUN for i in $(grep '^\w.*' /yaourt); do sudo -u user yaourt -S --noconfirm $i || true; done
+RUN sudo -u user yaourt -P -i --noconfirm /zasdfgbnmsystem-desktop-small
 
 # install netdata_nv_plugin
 RUN /install_netdata_nv_plugin.sh
@@ -18,7 +18,6 @@ RUN /install_netdata_nv_plugin.sh
 # system settings
 RUN systemctl enable libvirtd sddm org.cups.cupsd
 RUN sed -i 's/basic/desktop/g' /etc/docker-btrfs.json
-RUN echo 'fs.inotify.max_user_watches=524288' > /etc/sysctl.d/inotify.conf
 
 COPY sddm.conf /etc/sddm.conf
 COPY qemu.conf /etc/libvirt
