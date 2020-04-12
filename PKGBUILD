@@ -15,7 +15,6 @@ depends=(
 	firefox
 	lastpass
 	insync
-	motrix
 
 	# development
 	visual-studio-code-bin
