@@ -9,7 +9,7 @@ RUN pacman -Sy --noconfirm archlinuxcn-keyring archlinux-keyring
 RUN sudo -u user yaourt -Syua --noconfirm || true
 
 # install all packages
-RUN sudo -u user yaourt -Sy --noconfirm zasdfgbnmsystem-desktop-small
+RUN sudo -u user yaourt -Sy --noconfirm xorg xorg-drivers zasdfgbnmsystem-desktop-small
 
 # install netdata_nv_plugin
 RUN /install_netdata_nv_plugin.sh
