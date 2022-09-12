@@ -8,6 +8,12 @@ depends=(
 	cups
 	plasma-meta
 	archlinux-themes-sddm
+	
+	# networking
+	networkmanager
+	networkmanager-openconnect
+	networkmanager-pptp
+	networkmanager-strongswan
 
 	# virtualization
 	ovmf
