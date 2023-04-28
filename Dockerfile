@@ -1,6 +1,6 @@
 FROM zasdfgbnmsystem/basic
 
-RUN pacman -Syu --noconfirm xorg xorg-drivers
+RUN sudo pacman -Syu --noconfirm xorg xorg-drivers
 
 USER root
 COPY desktop-small /usr/local/share/packages/desktop-small
