@@ -1,5 +1,5 @@
 post_install() {
-    systemctl enable NetworkManager NetworkManager-dispatcher libvirtd sddm cups
+    systemctl enable NetworkManager NetworkManager-dispatcher libvirtd sddm cups avahi-daemon
     sed -i 's/basic/desktop/g' /etc/docker-btrfs.json
     cp /opt/zasdfgbnmsystem/etc/libvirt/qemu.conf /etc/libvirt/qemu.conf
     ln -s /opt/cuda /usr/local/cuda
